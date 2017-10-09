@@ -1,4 +1,4 @@
-# Set the base image to Ubuntu
+# Set the base image to Node 6.11.4 Stable (Boron)
 FROM node:boron
 
 # File Author / Maintainer
@@ -11,7 +11,7 @@ MAINTAINER Kareem Saleh
 #    sudo apt-get install -y build-essential nodejs
 
 
-# Install nodemon
+# Install nodemon for running app, Express for framework, Redis client
 RUN npm install -g nodemon
 RUN npm install express --save
 RUN npm install redis --save
